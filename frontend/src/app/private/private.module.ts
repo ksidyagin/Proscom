@@ -33,6 +33,9 @@ import { HrConstructorComponent } from './components/hr-constructor/hr-construct
 import { EmployeeLearningAdaptationComponent } from './components/employee-learning-adaptation/employee-learning-adaptation.component';
 import { HrConstructorRelatedPositionsComponent } from './components/hr-constructor-related-positions/hr-constructor-related-positions.component';
 import { EmployeeCorporateCultureComponent } from './components/employee-corporate-culture/employee-corporate-culture.component';
+import { EmployeeMeetingsComponent } from './components/employee-meetings/employee-meetings.component';
+import {FormsModule} from '@angular/forms';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -55,7 +58,8 @@ import { EmployeeCorporateCultureComponent } from './components/employee-corpora
     HrConstructorComponent,
     EmployeeLearningAdaptationComponent,
     HrConstructorRelatedPositionsComponent,
-    EmployeeCorporateCultureComponent
+    EmployeeCorporateCultureComponent,
+    EmployeeMeetingsComponent
   ],
   imports: [
     CommonModule,
@@ -69,7 +73,9 @@ import { EmployeeCorporateCultureComponent } from './components/employee-corpora
     MatInputModule,
     MatChipsModule,
     MatAutocompleteModule,
-    MatIconModule
+    MatIconModule,
+    MatSelectModule,
+    FormsModule
   ]
 })
 export class PrivateModule { }

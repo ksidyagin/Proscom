@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.courses{
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    background: rgba(235, 240, 242, 1);
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 262px;
+    width: 250px;
+    padding: 5px 30px;
+    border-radius: 40px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+}
+.navbar-line{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(17, 17, 17, 1);
+    border-bottom:rgba(211, 213, 219, 1) 1px solid ;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(48, 140, 255, 1);
+    margin-bottom: 25px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.courses-list{
+    
+}
+.courses-filters{
+    display: flex;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.filters__fields-name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+}
+.filters__field{
+    width: 150px;
+    border-radius: 10px;
+    height: 41px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.skill-card{
+    width: 313px;
+    height: 236px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.skill-card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.skill-card__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(48, 140, 255, 1);
+    margin-bottom: 25px;
+}
+
+.skill-card__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    margin-bottom: 6px;
+}
+
+.skill-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-card-dateinfo{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+.skill-card-date{
+    width: 86px;
+    height: 21px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid rgba(48, 140, 255, 1);
+    color: rgba(48, 140, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+
+.additional-skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.additional-skill-card{
+    width: 313px;
+    height: 236px;
+    padding: 30px;
+    border-radius: 40px;
+    background:  rgba(48, 140, 255, 1);
+}
+
+.additional-skill-card-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.additional-skill-card__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+}
+
+.additional-skill-card__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 6px;
+}
+
+.additional-skill-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.additional-skill-card-dateinfo{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+}
+.additional-skill-card-date{
+    width: 86px;
+    height: 21px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+
+
+@media (min-width: 1800px) {
+    .navbar{
+        margin-left: 310px;
+    }
+}
+
+@media (min-width: 768px) {
+    .courses{
+        flex-direction: row;
+    }
+    .navbar{
+        margin-left: 110px;
+    }
+    .title{
+        justify-content: flex-start;
+    }
+    .skills{
+        justify-content: flex-start;
+    }
+    .additional-skills{
+        justify-content: flex-start;
+    }
+}

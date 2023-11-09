@@ -19,6 +19,7 @@ import { HrConstructorComponent } from './components/hr-constructor/hr-construct
 import { EmployeeLearningAdaptationComponent } from './components/employee-learning-adaptation/employee-learning-adaptation.component';
 import { HrConstructorRelatedPositionsComponent } from './components/hr-constructor-related-positions/hr-constructor-related-positions.component';
 import { EmployeeCorporateCultureComponent } from './components/employee-corporate-culture/employee-corporate-culture.component';
+import { EmployeeMeetingsComponent } from './components/employee-meetings/employee-meetings.component';
 
 const routes: Routes = [
   
@@ -63,6 +64,11 @@ const routes: Routes = [
       {
         path: 'employee-corporate-culture',
         component: EmployeeCorporateCultureComponent,
+        canActivate:[RoleGuard]
+      },
+      {
+        path: 'employee-meetings',
+        component: EmployeeMeetingsComponent,
         canActivate:[RoleGuard]
       },
       {

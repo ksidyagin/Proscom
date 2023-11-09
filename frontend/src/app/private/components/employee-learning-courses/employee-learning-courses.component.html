@@ -9,7 +9,7 @@
         <div class="navbar-line">
             Опросы
         </div>
-        <div style="border-bottom:none" class="navbar-line">
+        <div [routerLink]="['/private/employee-meetings']" style="border-bottom:none" class="navbar-line">
             Встречи
         </div>
     </div>
@@ -22,17 +22,27 @@
                 <div class="filters__fields-name">
                     Название:
                 </div>
-                <div class="filters__field">
-                    UX/UI
-                </div>
+                <mat-form-field>
+                    <mat-label>Выберите название:</mat-label>
+                    <mat-select>
+                        <div  *ngFor="let tag of tags">
+                            <mat-option [value]="tag.value">{{tag.viewValue}}</mat-option>
+                        </div>
+                    </mat-select>
+                  </mat-form-field>
             </div>
             <div class="filters">
                 <div class="filters__fields-name">
-                    Название:
+                    Теги:
                 </div>
-                <div class="filters__field">
-                    UX/UI
-                </div>
+                <mat-form-field>
+                    <mat-label>Выберите тэг:</mat-label>
+                    <mat-select>
+                        <div  *ngFor="let tag of tags">
+                            <mat-option [value]="tag.value">{{tag.viewValue}}</mat-option>
+                        </div>
+                    </mat-select>
+                  </mat-form-field>
             </div>
         </div>
         <div class="title">
