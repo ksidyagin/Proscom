@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.employee-corporate-culture{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    padding: 120px;
+    background: rgba(235, 240, 242, 1);
+
+}
+.employee-corporate-culture-tasks{
+    max-width: 45%;
+}
+.employee-corporate-culture-descr{
+    padding: 54px;
+    max-width: 45%;
+    border-radius: 10px;
+    background: rgba(244, 244, 244, 1);
+    height: 848px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(17, 17, 17, 1);
+    margin-top: 40px;
+}
+.employee-corporate-culture-title{
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    margin-bottom: 52px;
+}
