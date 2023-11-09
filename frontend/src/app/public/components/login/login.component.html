@@ -1,0 +1,22 @@
+<div class="login-page">
+  <div class="header">
+      <div class="header-title">PROSCOM</div>
+  </div>
+  <form [formGroup]="form" (ngSubmit)="login()" class="login">
+      <div class="login-title">
+          Авторизация
+      </div>
+      <div class="login-field">
+          <input formControlName="email" placeholder="Логин" class="login-field__input" type="email">
+          <mat-error *ngIf="email.touched && email.hasError('required')">Емейл обязателен</mat-error>
+          <mat-error *ngIf="email.touched && email.hasError('email')">Емейл должен быть валидным</mat-error>
+      </div>
+      <div class="login-field">
+          <input formControlName="password" placeholder="Пароль" class="login-field__input" type="password">
+          <mat-error *ngIf="password.touched && password.hasError('required')">Пароль обязателен!</mat-error>
+      </div>
+      <button type="submit" [disabled]="!form.valid" class="login-btn">
+          Войти
+      </button>
+  </form>
+</div>

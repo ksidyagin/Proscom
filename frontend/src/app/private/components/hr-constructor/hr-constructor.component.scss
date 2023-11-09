@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.hr-constructor{
+    padding: 120px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(235, 240, 242, 1);
+
+}
+.hr-constructor__container{
+    width: 1300px;
+    margin: 0 auto;
+}
+.hr-constructor-options{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    height:101px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+    gap: 56px;
+    margin-bottom: 50px;
+}
+.hr-constructor-option{
+    cursor: pointer;
+    width:289px;
+    height:41px;
+    border-radius: 10px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr-constructor-option__active{
+    width:289px;
+    height:41px;
+    border-radius: 10px;
+    background: rgba(48, 140, 255, 1);
+    border: 1px solid rgba(48, 140, 255, 1);
+    box-shadow: 0px 4px 10px 0px rgba(48, 140, 255, 0.1);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(48, 140, 255, 1);
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.courses-filters{
+    display: flex;
+    margin-bottom: 25px;
+    gap: 15px;
+}
+.filters{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.filters__fields-name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+}
+.filters__field{
+    width: auto;
+    padding: 0 23px;
+    border-radius: 10px;
+    height: 41px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+.profile-item__about{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.profile-item__about-work{
+    height: 279px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+}
+.about-work__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(48, 140, 255, 1);
+    margin-bottom: 25px;
+}
+.about-work-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.about-work__fields{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.about-work__fields-name{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 1);
+}
+.about-work__field{
+    width: 150px;
+    border-radius: 10px;
+    height: 41px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-item__about-you{
+    height: 279px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+}
+textarea{
+    resize: none;
+    width: 100%;
+    height: 173px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    background: rgba(235, 240, 242, 1);
+}
+textarea::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+
+/* WebKit, Edge */
+textarea::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+
+/* Firefox 4-18 */
+textarea:-moz-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+
+/* Firefox 19+ */
+textarea::-moz-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+
+/* IE 10-11 */
+textarea:-ms-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+
+/* Edge */
+textarea::-ms-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+
+
+.profile-item__additional{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.profile-item__docs{
+    height: 279px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+}
+.docs-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.docs-field{
+    width: 395px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgba(48, 140, 255, 1);
+    box-shadow: 0px 4px 10px 0px rgba(48, 140, 255, 0.1);
+    background: rgba(48, 140, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 1);
+}
+.profile-item__skills{
+    width: 100%;
+    height: 173px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    background: rgba(235, 240, 242, 1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-tag{
+    width: 99px;
+    padding: 5px;
+    height: 21px;
+    border-radius: 6px;
+    background: rgba(48, 140, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+.skill-card{
+    width: 413px;
+    height: 110px;
+    padding: 30px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill-card-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.skill-card__title{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(48, 140, 255, 1);
+    margin-bottom: 15px;
+}
+
+.skill-card__text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    margin-bottom: 6px;
+}
+
+.skill-card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.skill-card-dateinfo{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+}
+.skill-card-date{
+    width: 86px;
+    height: 21px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid rgba(48, 140, 255, 1);
+    color: rgba(48, 140, 255, 1);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+}
+.hr-constructor__btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.hr-constructor__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgba(17, 17, 17, 1);
+    width: 258px;
+    height: 52px;
+    border-radius: 26px;
+    background: rgba(230, 238, 248, 1);
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    cursor: pointer;
+}
+.hr-constructor__btn-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: rgb(255, 255, 255);
+    width: 258px;
+    height: 52px;
+    border-radius: 26px;
+    background: rgba(48, 140, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .main-info__field{
+        width: 228px;
+    }
+    .main-info__kpi{
+        width: 200px;
+    }
+    .about-work__field{
+        width: 228px;
+    }
+    .profile-item__about-work{
+        width: 453px;
+    }
+    .profile-item__about-you{
+        width: 425px;
+    }
+    .profile-item__docs{
+        width: 425px;
+    }
+}
+@media (min-width: 1400px) {
+    .profile-item__about-you{
+        width: 625px;
+    }
+    .profile-item__docs{
+        width: 625px;
+    }
+    .hr-constructor-options{
+        gap: 186px;
+    }
+}

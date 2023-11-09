@@ -1,0 +1,230 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  min-width: 350px;
+
+  .register {
+    margin-bottom: 20px;
+  }
+
+  mat-card {
+    mat-card-content {
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        mat-form-field {
+          width: 100%;
+          min-width: 300px;
+        }
+
+        .button {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Roboto:wght@700&display=swap');
+*{
+  text-decoration: none;
+}
+input {outline:none;}
+.header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+@media (max-width: 370px) {
+  .header{
+      padding: 0;
+  }
+}
+.header-left{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 11px 20px;
+}
+.header-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: rgba(48, 140, 255, 1);
+  margin-top: 102px;
+}
+.header-right{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 17px;
+}
+.header-profile__title{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+}
+.login{
+  max-width: 329px;
+  height: 524px;
+  background: rgba(235, 240, 242, 1);
+  border-radius: 54px;
+  padding: 27px 38px;
+  margin: 61px auto;
+  box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+  
+}
+.login-title{
+  font-family: 'Golos Text', sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(34, 34, 34, 1);
+  margin-bottom: 50px;
+  margin-top: 108px;
+}
+
+.login-field__title{
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
+.login-field{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.login-field__input{
+  height: 41px;
+  max-width: 228px;
+  background: rgba(235, 240, 242, 1);
+  border-radius: 10px;
+  color: #000000;
+  border: none;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 10px 0px rgba(48, 140, 255, 0.1);
+  text-align: center;
+}
+.login-btn{
+  width: 258px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:rgba(230, 238, 248, 1);
+  border-radius: 26px;
+  font-family: 'Golos Text', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(34, 34, 34, 1);
+  margin: 13px auto;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
+
+}
+.login-forgot-pass{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .login{
+      max-width: 80%;
+  }
+  .login-field__title{
+  font-size: 16px;
+  }
+  .login-title{
+  font-size: 20px;
+  }
+  .login-forgot-pass{
+      font-size: 16px;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+@media (max-width: 424px) {
+  .header-title{
+      font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+
+  .header-profile__title{
+      display: none;
+  }
+}
+
+.login-page{
+  background: rgba(235, 240, 242, 1);
+  padding: 120px;
+}
+
+.footer {
+  height: 73px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(235, 240, 242, 1);
+}
+
+.footer-logo{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  color: rgba(48, 140, 255, 1);
+  cursor: pointer;
+}
+
+.footer-tm{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(79, 79, 79, 1);
+  cursor: pointer;
+}

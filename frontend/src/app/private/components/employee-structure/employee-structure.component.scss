@@ -1,0 +1,38 @@
+
+.employee-structure{
+    padding: 120px 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    background: rgba(235, 240, 242, 1);
+    gap: 50px;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 262px;
+    width: 250px;
+    padding: 5px 30px;
+    margin-left: 110px;
+    border-radius: 40px;
+    background: rgba(235, 240, 242, 1);
+    box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
+}
+.navbar-line{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: rgba(17, 17, 17, 1);
+    border-bottom:rgba(211, 213, 219, 1) 1px solid ;
+    padding: 20px;
+    cursor: pointer;
+}
+.organization-structure{
+    background: #fff;
+    border-radius: 40px;
+    padding: 20px;
+}

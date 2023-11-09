@@ -1,0 +1,39 @@
+<div class="header">
+    <div class="header-left">
+        <div class="header-logo">
+            PROSCOM
+        </div>
+    </div>
+    <div *ngIf="user.user.roles[0]=='Employee'" class="header-mid">
+            <div [routerLink]="['/private/employee-tasks']" class="header-mid__title">Задачи</div>
+            <div [routerLink]="['/private/employee-learning-adaptation']" class="header-mid__title">Обучение</div>
+            <div [routerLink]="['/private/employee-structure']" class="header-mid__title">Структура</div>
+            <div [routerLink]="['/private/employee-corporate-culture']" class="header-mid__title">Корпоративная культура</div>  
+            <div class="header-mid__title">Бот</div>
+    </div>
+    <div *ngIf="user.user.roles[0]=='HR'" class="header-mid">
+        <div [routerLink]="['/private/hr-workers']" class="header-mid__title">Сотрудники</div>
+        <div [routerLink]="['/private/hr-departments']" class="header-mid__title">Отделы</div>
+        <div [routerLink]="['/private/hr-analytics']" class="header-mid__title">Аналитика</div>
+        <div class="header-mid__title">Структура</div>
+        <div class="header-mid__title">Регламенты</div>
+        <div [routerLink]="['/private/hr-constructor']" class="header-mid__title">Конструктор</div>
+
+</div>
+    <div class="header-right">
+            <img [routerLink]="['/private/chat']"  src="../../assets/comment.svg" alt="">
+            <img src="../../assets/notification.svg" alt="">
+            <img [routerLink]="['/private/profile']"  src="../../assets/person-1.svg" alt="">
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="footer">
+    <div class="footer-logo">
+        PROSCOM
+    </div>
+    <div class="footer-tm">
+        2023 © PROSCOM. Все права защищены
+    </div>
+</div>
