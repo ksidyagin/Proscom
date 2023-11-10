@@ -7,6 +7,8 @@ import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { AuthMiddleware } from './middleware/auth.middleware';
 import { ChatModule } from './chat/chat.module';
+import { TestModule } from './course-test/test.module';
+import { ModulModule } from './modul/modul.module';
 
 @Module({
   imports: [
@@ -23,7 +25,9 @@ import { ChatModule } from './chat/chat.module';
     }),
     UserModule,
     AuthModule,
-    ChatModule
+    ChatModule,
+    TestModule,
+    ModulModule
   ],
   controllers: [AppController],
   providers: [AppService],
