@@ -6,7 +6,7 @@ WORKDIR /proscom/frontend/src/app
 
 COPY package*.json ./
 
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN npm install -g @angular/cli@15.1.0
 
 COPY . .
