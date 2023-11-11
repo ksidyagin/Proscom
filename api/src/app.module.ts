@@ -22,13 +22,9 @@ import { UserTestModule } from './user_test/user-test.module';
     ConfigModule.forRoot({isGlobal: true}),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
-      port: 5432,
-      database: 'chat_socket',
-      username: 'postgres',
-      password: '1111',
-      autoLoadEntities:true,
-      synchronize:true
+      url: process.env.DATABASE_URL,
+      autoLoadEntities: true,
+      synchronize: true
     }),
     UserModule,
     AuthModule,

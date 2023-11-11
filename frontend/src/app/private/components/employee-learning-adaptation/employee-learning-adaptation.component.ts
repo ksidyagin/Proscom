@@ -51,7 +51,9 @@ export class EmployeeLearningAdaptationComponent {
   }
 
   showModal(obj:any){
-    this.activeTest = obj;
+    this.activeTest = obj.test;
+    var json = JSON.parse(this.activeTest.dict);
+    this.activeTest["variants"]= json;
     this.showTest = !this.showTest;
     console.log(this.activeTest)
   }
