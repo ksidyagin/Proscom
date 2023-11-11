@@ -1,13 +1,13 @@
 
 # Stage 1: build
-FROM node:19 AS development
+FROM node
 
-WORKDIR /proscom/frontend/src/app
+WORKDIR ./src/app
 
 COPY package*.json ./
 
-RUN npm install --legacy-peer-deps
-RUN npm install -g @angular/cli@15.1.0
+RUN npm install
+RUN npm install -g @angular/cli
 
 COPY . .
 

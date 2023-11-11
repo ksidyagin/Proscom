@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
       context: ./api
       # Only build development stage from Dockerfile
-      target: development
+      #target: development
     # Mount our host dir to the docker container
     # Mount api directory (./api) to (:) docker container (/proscom/src/app)
     # Reflect File changes from host to container
@@ -33,7 +33,7 @@ services:
     build:
       dockerfile: Dockerfile
       context: ./frontend
-      target: development
+      #target: development
     command: npm run start
     volumes:
       - ./frontend:/proscom/frontend/src/app
@@ -63,5 +63,3 @@ services:
       PGADMIN_DEFAULT_PASSWORD: password
     ports:
       - 5050:80
-
-
