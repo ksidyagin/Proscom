@@ -17,6 +17,27 @@ export class UserEntity {
   @Column({unique: true})
   email: string;
 
+  @Column({unique: false, default:''})
+  first_name: string;
+
+  @Column({unique: false, default:''})
+  second_name:string;
+
+  @Column({unique: false, default:''})
+  third_name:string;
+
+  @Column({unique: false, default:''})
+  birthday: string;
+
+  @Column({unique: false, default:''})
+  avatar_url:string;
+
+  @Column({unique: false, default:''})
+  sex:string;
+
+  @Column({unique: false, default:0})
+  kpi:number;
+
   @Column({select: false})
   password: string;
 

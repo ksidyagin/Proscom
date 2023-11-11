@@ -1,4 +1,5 @@
 import { TestI } from "src/course-test/model/test.interface";
+import { StageI } from "src/stage/model/stage.interface";
 
 
 export class ModulI {
@@ -12,7 +13,7 @@ export class ModulI {
   descr?: string;
 
 
-  hours?:number;
+  hours?:string;
 
 
   difficulty?: string;
@@ -20,4 +21,7 @@ export class ModulI {
 
   test?: TestI;
 
+  stage?: StageI;
+
+  file_path?: string;
 }

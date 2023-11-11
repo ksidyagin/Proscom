@@ -1,5 +1,6 @@
 
-import {Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { StageEntity } from "src/stage/model/stage.entity";
+import {Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class ProgramEntity {
@@ -13,4 +14,7 @@ export class ProgramEntity {
   @Column()
   hours:number;
 
+  @OneToMany(() => StageEntity, (stage) => stage.program)
+  @JoinColumn()
+  stages: StageEntity[]
 }

@@ -1,6 +1,7 @@
 
 import { ModulEntity } from "src/modul/model/modul.entity";
-import {Column, Entity, JoinColumn, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import { ProgramEntity } from "src/program/model/program.entity";
+import {Column, Entity, JoinColumn, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class StageEntity {
@@ -17,4 +18,8 @@ export class StageEntity {
   @OneToMany(() => ModulEntity, (modul) => modul.stage)
   @JoinColumn()
   modules: ModulEntity[]
+
+  @ManyToOne(() => ProgramEntity, (program) => program.stages)
+  @JoinColumn()
+  program: ProgramEntity
 }

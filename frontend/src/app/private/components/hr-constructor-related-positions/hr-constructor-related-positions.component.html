@@ -1,7 +1,7 @@
 <div class="hr-constructor">
     <div class="hr-constructor__container">
         <div class="hr-constructor-options">
-            <div class="hr-constructor-option__active">
+            <div class="hr-constructor-option hr-constructor-option__active">
                 Смежные должности
             </div>
             <div [routerLink]="['/private/hr-constructor']" class="hr-constructor-option">
@@ -12,6 +12,14 @@
             </div>
         </div>
         <div class="courses-filters">
+            <div class="filters">
+                <div class="filters__fields-name">
+                    Сотрудник:
+                </div>
+                <div class="filters__field">
+                    Выбор сотрудника: <img src="../../../../assets/arrow_stroke.svg" alt="">
+                </div>
+            </div>
             <div class="filters">
                 <div class="filters__fields-name">
                     Должность:

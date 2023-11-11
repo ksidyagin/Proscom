@@ -15,7 +15,7 @@
     </div>
     <div class="courses-list">
         <!-- component -->
-        <div class="w-full py-6">
+        <div class="w-3/4 py-6">
             <div class="flex">
             <div class="w-1/4">
                 <div class="relative mb-2">
@@ -98,130 +98,55 @@
         <div class="title">
             Необходимые действия:
         </div>
-        <div class="skills">
-            <div class="skill-card">
+        <div *ngIf="!showTest" class="skills">
+            <div *ngFor="let item of stages[0].modules" class="skill-card">
                 <div class="skill-card-head">
                     <div class="skill-card__title">
-                        Документооборот
+                        {{item.name}}
                     </div>
                     <img src="../../../../assets/learn-link.svg" alt="">
                 </div>
                 <div class="skill-card__text">
-                    Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
+                    {{item.descr}}
                 </div>
                 <div class="skill-card-footer">
                     <div>
-                        <span class="skill-card-dateinfo">Тест до: </span>
-                        <span class="skill-card-date">07.11.2023</span>
+                        <span class="skill-card-dateinfo">Длительность: </span>
+                        <span class="skill-card-date">{{item.hours}}</span>
                     </div>
-                    <img src="../../../../assets/learn-finished.svg" alt="">
+                    <img (click)="showModal(item)" src="../../../../assets/learn-finished.svg" alt="">
                 </div>
+                
             </div>
-            <div class="skill-card">
-                <div class="skill-card-head">
-                    <div class="skill-card__title">
-                        Документооборот
-                    </div>
-                    <img src="../../../../assets/learn-link.svg" alt="">
-                </div>
-                <div class="skill-card__text">
-                    Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                </div>
-                <div class="skill-card-footer">
-                    <div>
-                        <span class="skill-card-dateinfo">Тест до: </span>
-                        <span class="skill-card-date">07.11.2023</span>
-                    </div>
-                    <img src="../../../../assets/learn-in-process.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card-head">
-                    <div class="skill-card__title">
-                        Документооборот
-                    </div>
-                    <img src="../../../../assets/learn-link.svg" alt="">
-                </div>
-                <div class="skill-card__text">
-                    Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                </div>
-                <div class="skill-card-footer">
-                    <div>
-                        <span class="skill-card-dateinfo">Тест до: </span>
-                        <span class="skill-card-date">07.11.2023</span>
-                    </div>
-                    <img src="../../../../assets/learn-notsuitable.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card-head">
-                    <div class="skill-card__title">
-                        Документооборот
-                    </div>
-                    <img src="../../../../assets/learn-link.svg" alt="">
-                </div>
-                <div class="skill-card__text">
-                    Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                </div>
-                <div class="skill-card-footer">
-                    <div>
-                        <span class="skill-card-dateinfo">Тест до: </span>
-                        <span class="skill-card-date">07.11.2023</span>
-                    </div>
-                    <img src="../../../../assets/learn-finished.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card-head">
-                    <div class="skill-card__title">
-                        Документооборот
-                    </div>
-                    <img src="../../../../assets/learn-link.svg" alt="">
-                </div>
-                <div class="skill-card__text">
-                    Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                </div>
-                <div class="skill-card-footer">
-                    <div>
-                        <span class="skill-card-dateinfo">Тест до: </span>
-                        <span class="skill-card-date">07.11.2023</span>
-                    </div>
-                    <img src="../../../../assets/learn-in-process.svg" alt="">
-                </div>
-            </div>
-            <div class="skill-card">
-                <div class="skill-card-head">
-                    <div class="skill-card__title">
-                        Документооборот
-                    </div>
-                    <img src="../../../../assets/learn-link.svg" alt="">
-                </div>
-                <div class="skill-card__text">
-                    Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                    Требуется оформить через сайт...Требуется оформить через сайт...
-                </div>
-                <div class="skill-card-footer">
-                    <div>
-                        <span class="skill-card-dateinfo">Тест до: </span>
-                        <span class="skill-card-date">07.11.2023</span>
-                    </div>
-                    <img src="../../../../assets/learn-notsuitable.svg" alt="">
-                </div>
-            </div>
+
+
 
 
         </div>
+        <div *ngIf="showTest">
+            <!-- component -->
+            <div class="flex items-center justify-center">
+                <div class="px-9 pt-10 pb-14 flex flex-col gap-y-8 bg-blue-500 text-white rounded-xl max-w-[510px] max-h-[468px]">
+                    <div (click)="close()" class="flex justify-end">
+                        <img width="32" height="32" src="https://img.icons8.com/ios/50/ffffff/delete-sign--v1.png" alt="delete-sign--v1"/>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-2xl pb-4">Ответьте на вопрос</div>
+                        <p class="">
+                            Ответьте на вопрос
+                        </p>
+                    </div>
+                    <div>
+                        <form method="/post" action="" class="flex flex-col space-y-8">
+
+                            <button type="submit" class="max-w-[200px] h-auto rounded-full bg-white text-black py-3 px-6 ">
+                                <span class="text-teal-900 font-semibold">Ответить</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
 
     </div>
 

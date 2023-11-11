@@ -1,6 +1,9 @@
+import { StageI } from "src/stage/model/stage.interface";
 
-export interface TestI {
-  id?: number;
-  name?: string;
-  dict?: string;
+
+export interface ProgramI {
+  id: number;
+  name: string;
+  hours:number;
+  stages: StageI[];
 }

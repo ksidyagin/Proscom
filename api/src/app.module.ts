@@ -9,6 +9,13 @@ import { AuthMiddleware } from './middleware/auth.middleware';
 import { ChatModule } from './chat/chat.module';
 import { TestModule } from './course-test/test.module';
 import { ModulModule } from './modul/modul.module';
+import { StageModule } from './stage/stage.module';
+import { ProgramModule } from './program/program.module';
+import { AboutEmployeeModule } from './about-employee/about-employee.module';
+import { AboutHrModule } from './about-hr/about-hr.module';
+import { DepartmentModule } from './department/department.module';
+import { PositionModule } from './position/position.module';
+import { UserTestModule } from './user_test/user-test.module';
 
 @Module({
   imports: [
@@ -27,7 +34,14 @@ import { ModulModule } from './modul/modul.module';
     AuthModule,
     ChatModule,
     TestModule,
-    ModulModule
+    ModulModule,
+    StageModule,
+    ProgramModule,
+    AboutEmployeeModule,
+    AboutHrModule,
+    DepartmentModule,
+    PositionModule,
+    UserTestModule
   ],
   controllers: [AppController],
   providers: [AppService],

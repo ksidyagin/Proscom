@@ -5,50 +5,50 @@
   min-width: 350px;
 
   .register {
-    margin-bottom: 20px;
+      margin-bottom: 20px;
   }
 
   mat-card {
-    mat-card-content {
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+      mat-card-content {
+          form {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
 
-        mat-form-field {
-          width: 100%;
-          min-width: 300px;
-        }
+              mat-form-field {
+                  width: 100%;
+                  min-width: 300px;
+              }
 
-        .button {
-          display: flex;
-          justify-content: flex-end;
-        }
+              .button {
+                  display: flex;
+                  justify-content: flex-end;
+              }
+          }
       }
-    }
   }
-
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Roboto:wght@700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500&family=Roboto:wght@700&display=swap");
+* {
   text-decoration: none;
 }
-input {outline:none;}
-.header{
+input {
+  outline: none;
+}
+.header {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
 }
 @media (max-width: 370px) {
-  .header{
+  .header {
       padding: 0;
   }
 }
-.header-left{
+.header-left {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -56,8 +56,8 @@ input {outline:none;}
   gap: 10px;
   padding: 11px 20px;
 }
-.header-title{
-  font-family: 'Roboto';
+.header-title {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -65,14 +65,14 @@ input {outline:none;}
   color: rgba(48, 140, 255, 1);
   margin-top: 102px;
 }
-.header-right{
+.header-right {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 17px;
 }
-.header-profile__title{
-  font-family: 'Open Sans';
+.header-profile__title {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -80,7 +80,7 @@ input {outline:none;}
   text-align: center;
   color: #000000;
 }
-.login{
+.login {
   max-width: 329px;
   height: 524px;
   background: rgba(235, 240, 242, 1);
@@ -88,10 +88,9 @@ input {outline:none;}
   padding: 27px 38px;
   margin: 61px auto;
   box-shadow: 0px 0px 15px 0px rgba(48, 140, 255, 0.25);
-  
 }
-.login-title{
-  font-family: 'Golos Text', sans-serif;
+.login-title {
+  font-family: "Golos Text", sans-serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
@@ -101,28 +100,28 @@ input {outline:none;}
   margin-top: 108px;
 }
 
-.login-field__title{
-  font-family: 'Golos Text', sans-serif;
+.login-field__title {
+  font-family: "Golos Text", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
   color: #000000;
 }
-.login-field{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+.login-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.login-field__input{
+.login-field__input {
   height: 41px;
   max-width: 228px;
   background: rgba(235, 240, 242, 1);
   border-radius: 10px;
   color: #000000;
   border: none;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -131,15 +130,16 @@ flex-direction: column;
   box-shadow: 0px 4px 10px 0px rgba(48, 140, 255, 0.1);
   text-align: center;
 }
-.login-btn{
-  width: 258px;
+.login-btn {
+  max-width: 258px;
+  width: 100%;
   height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:rgba(230, 238, 248, 1);
+  background: rgba(230, 238, 248, 1);
   border-radius: 26px;
-  font-family: 'Golos Text', sans-serif;
+  font-family: "Golos Text", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -149,10 +149,9 @@ flex-direction: column;
   cursor: pointer;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(48, 140, 255, 0.25) inset;
-
 }
-.login-forgot-pass{
-  font-family: 'Open Sans';
+.login-forgot-pass {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -162,41 +161,61 @@ flex-direction: column;
 }
 
 @media (max-width: 500px) {
-  .login{
-      max-width: 80%;
+  .login {
+      // max-width: 80%;
   }
-  .login-field__title{
-  font-size: 16px;
+  .login-field__title {
+      font-size: 16px;
   }
-  .login-title{
-  font-size: 20px;
+  .login-title {
+      font-size: 20px;
   }
-  .login-forgot-pass{
+  .login-forgot-pass {
       font-size: 16px;
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: #fff;
 }
 
-
 @media (max-width: 424px) {
-  .header-title{
+  .header-title {
       font-size: 24px;
   }
 }
 @media (max-width: 767px) {
-
-  .header-profile__title{
+  .header-profile__title {
       display: none;
   }
 }
 
-.login-page{
+.login-page {
   background: rgba(235, 240, 242, 1);
   padding: 120px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .login-page {
+      padding: 30px 15px;
+  }
+  .header-title {
+      margin-top: 0;
+  }
+  .login {
+      margin: 0 auto;
+      padding: 15px;
+      width: 100%;
+  }
+  .login-field__input {
+      max-width: none;
+      width: 100%;
+  }
 }
 
 .footer {
@@ -209,8 +228,8 @@ a{
   background: rgba(235, 240, 242, 1);
 }
 
-.footer-logo{
-  font-family: 'Roboto', sans-serif;
+.footer-logo {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -219,8 +238,8 @@ a{
   cursor: pointer;
 }
 
-.footer-tm{
-  font-family: 'Roboto', sans-serif;
+.footer-tm {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

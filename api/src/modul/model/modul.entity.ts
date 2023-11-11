@@ -16,7 +16,7 @@ export class ModulEntity {
   descr: string;
 
   @Column()
-  hours:number;
+  hours:string;
 
   @Column()
   difficulty: string;
@@ -27,5 +27,8 @@ export class ModulEntity {
 
   @ManyToOne(() => StageEntity, (stage) => stage.modules)
   @JoinColumn()
-  stage: StageEntity
+  stage: StageEntity;
+
+  @Column()
+  file_path?: string;
 }

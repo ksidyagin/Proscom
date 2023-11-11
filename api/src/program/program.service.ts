@@ -1,30 +1,38 @@
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { IPaginationOptions, paginate, Pagination } from 'nestjs-typeorm-paginate';
-import { TestEntity } from './model/test.entity';
 import { Injectable } from '@nestjs/common';
-import { TestI } from './model/test.interface';
+import { ProgramEntity } from './model/program.entity';
+import { ProgramI } from './model/program.interface';
 
 @Injectable()
-export class TestService {
+export class ProgramService {
 
   constructor(
-    @InjectRepository(TestEntity)
-    private readonly testRepository: Repository<TestEntity>
+    @InjectRepository(ProgramEntity)
+    private readonly testRepository: Repository<ProgramEntity>
   ) { }
 
 
-  async findAll(options: IPaginationOptions): Promise<Pagination<TestI>> {
-    return paginate<TestEntity>(this.testRepository, options);
+  async findAll(): Promise<ProgramI[]> {
+    return this.testRepository.find({relations: ['stages']});
   }
 
-
-  async findOne(id: number): Promise<TestI> {
+  async findOne(id: number): Promise<ProgramI> {
     return this.testRepository.findOne({ id });
   }
 
 
+  async create(object: ProgramI): Promise<ProgramI> {
+    return this.testRepository.save(object);
+  }
 
+  async deleteOne(id: number): Promise<any> {
+    return this.testRepository.delete(id);
+  }
 
+  async updateOne(id: number, object: ProgramI): Promise<any> {
+    return this.testRepository.update(id, object);
+  }
 
 }

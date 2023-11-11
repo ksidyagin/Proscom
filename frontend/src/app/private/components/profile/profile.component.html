@@ -3,21 +3,21 @@
 
         <div class="profile-item__main">
             <div class="main-info__item">
-                <img class="main-info__item-img" src="../../../../assets/Rectangle 1138.svg" alt="">
+                <img class="main-info__item-img" [src]="user.user.avatar_url" alt="">
             </div>
             <div class="main-info__item">
                 <div class="main-info__fields">
                     <div class="main-info__field">
-                        Иванов
+                        {{user.user.second_name}}
                     </div>
                     <div class="main-info__field">
-                        Иван
+                        {{user.user.first_name}}
                     </div>
                     <div class="main-info__field">
-                        Иванович
+                        {{user.user.third_name}}
                     </div>
                     <div class="main-info__field">
-                        11.02.1998
+                        {{user.user.birthday}}
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@
                 <div class="main-info__kpi">
                     KPI
                     <div class="main-info__kpi-count">
-                        1500
+                        {{user.user.kpi}}
                     </div>
                     за месяц
                 </div>
